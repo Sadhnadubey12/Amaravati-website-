@@ -55,6 +55,13 @@
     />
   </head>
 
+  <style>
+     .search-input::placeholder {
+    color: black;
+  }
+  </style>
+  
+
   <body class="sticky-header">
     <!--=====================================-->
     <!--=   Preloader     Start             =-->
@@ -69,107 +76,77 @@
       <!--=   Header     Start             =-->
       <!--=====================================-->
 
-      <header class="header">
-        <div id="rt-sticky-placeholder"></div>
-        <div id="header-menu" class="header-menu menu-layout1">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-xl-2 col-lg-2">
-                <div class="logo-area">
-                  <a href="index.html" class="temp-logo">
-                    <img
-                      src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg"
-                      width="157"
-                      height="40"
-                      alt="logo"
-                      class="img-fluid"
-                      style="margin-top: 10px"
-                    />
-                  </a>
+
+
+     <header class="rt-header sticky-on">
+    <div id="sticky-placeholder"></div>
+    <div id="navbar-wrap" class="header-menu menu-layout1 header-menu menu-layout2" style="background-color: white; padding: 3px 0;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Logo Section -->
+            <div class="logo-area" style="display: flex; align-items: center;">
+                <a href="index.html" class="temp-logo">
+                    <img src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg" width="120" height="40" alt="logo" class="img-fluid" style="margin-right: 10px;" />
+                </a>
+                <div class="logo-text" style="color: black; font-size: 20px; font-weight: bold;">
+                    Amaravati Homes.in <br />
+                    <span style="font-size: 12px; color: hsl(0, 2%, 9%); margin-left: 13px;">Property Getway to Amaravati</span>
                 </div>
-              </div>
-              <div
-                class="col-xl-6 col-lg-6 d-flex justify-content-center position-static"
-              >
-                <nav id="dropdown" class="template-main-menu">
-                  <ul>
-                    <li>
-                      <a href="index.html">Buy</a>
-                    </li>
-                    <li>
-                      <a href="index.html">Sell</a>
-                    </li>
-                    <li>
-                      <a href="index.html">FSI R Calculator</a>
-                    </li>
-                    <li>
-                      <a href="index.html">News</a>
-                    </li>
-                    <li>
-                      <a href="with-sidebar2.html">Property</a>
-                      <ul class="dropdown-menu-col-1">
-                        <li>
-                          <a href="half-map1.html">Properties Map Grid</a>
-                        </li>
-                        <li>
-                          <a href="half-map2.html">Properties Map List</a>
-                        </li>
-                        <li>
-                          <a href="with-sidebar.html">Properties Grid</a>
-                        </li>
-                        <li>
-                          <a href="with-sidebar2.html">Properties List</a>
-                        </li>
-                        <li>
-                          <a href="without-sidebar.html"
-                            >Properties Full Width</a
-                          >
-                        </li>
-                        <li>
-                          <a href="single-listing1.html">Single Property 1</a>
-                        </li>
-                        <li>
-                          <a href="single-listing2.html">Single Property 2</a>
-                        </li>
-                        <li>
-                          <a href="single-listing3.html">Single Property 3</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="col-xl-4 col-lg-4 d-flex justify-content-end">
-                <div class="header-action-layout1">
-                  <ul class="action-list">
-                    <li class="action-item-style my-account">
-                      <a
-                        href="account.html"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        title="Sign In"
-                      >
-                        <i class="flaticon-user-1"></i>
-                      </a>
-                    </li>
-                    <li class="listing-button">
-                      <a href="post-add.html" class="listing-btn">
-                        <span>
-                          <i class="fas fa-plus-circle"></i>
-                        </span>
-                        <span class="item-text">Add Property</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
+
+            <!-- Navigation Section -->
+            <nav id="dropdown" class="template-main-menu template-main-menu-3" style="display: flex; justify-content: center; flex-grow: 1;">
+                <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 30px;">
+                    <li style="display: inline-block;">
+                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">Buy</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">Sell</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">FSI R Calculator</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">News</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Account and Add Property Section -->
+            <div class="header-action-layout1" style="display: flex; align-items: center;">
+                <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
+                   <li class="action-item-style view-map" style="display: inline-block;">
+    <a href="https://www.google.com/maps" style="color: white; background-color:  #15c39a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;" target="_blank" title="View Map">
+         Map View
+    </a>
+</li>
+
+</li>
+<li class="" style="display: inline-block; margin: 0; padding: 0;">
+    <a href="account.html" style="color: white; background-color: black; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign In">
+        <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Sign In
+    </a>
+</li>
+<li class="" style="display: inline-block; margin: 0; padding: 0;">
+    <a href="login.html" style="color: white; background-color: black; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+        <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Login
+    </a>
+</li>
+
+
+
+
+
+                </ul>
+            </div>
         </div>
-      </header>
+    </div>
+</header>
+
+
+
+
+
+
       <div
         class="rt-header-menu mean-container position-relative"
         id="meanmenu"
@@ -208,10 +185,10 @@
           <div class="offscreen-navigation">
             <nav class="menu-main-primary-container">
               <ul class="menu">
-                <li class="list menu-item-parent menu-item-has-children">
+                <!-- <li class="list menu-item-parent menu-item-has-children">
                   <a class="animation" href="index.html">Home</a>
                  
-                </li>
+                </li> -->
                 <li class="list menu-item-parent menu-item-has-children">
                   <a href="index.html">Buy</a>
                 </li>
@@ -225,9 +202,7 @@
                   <a href="index.html">News</a>
                </li>
                 </li>
-                 <li class="list menu-item-parent menu-item-has-children">
-                  <a href="contact.html">Contact</a>
-               </li>
+               
               </ul>
             </nav>
           </div>
@@ -237,411 +212,41 @@
       <!--=   Main Banner     Start           =-->
       <!--=====================================-->
 
-      <section class="main-banner-wrap1" data-bg-image="img/slider/slider4.jpg">
-        <span class="banner-shape1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1000 100"
-            preserveAspectRatio="none"
-          >
-            <path
-              class="banner-shpape-fill"
-              d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
-            ></path>
-          </svg>
-        </span>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="main-banner-box1">
-                <h1 class="item-title wow fadeInUp" data-wow-delay=".4s">
-                   Plots for sale residential, commercial,villa and lands                
-                  </h1>
-                <div
-                  class="listing-category-list wow fadeInUp"
-                  data-wow-delay=".6s"
-                >
-                 <div class="search-radio">
-  <ul class="list-inline">
-    <li class="residential-plot">
-      <label for="residential-plot" class="active">
-        <i class="fas fa-home"></i>
-        <span>Residential Plot</span>
-        <input
-          type="radio"
-          name="rtcl_category"
-          id="residential-plot"
-          value="residential-plot"
-        />
-      </label>
-    </li>
-    <li class="commercial-plot">
-      <label for="commercial-plot">
-        <i class="fas fa-building"></i>
-        <span>Commercial Plot</span>
-        <input
-          type="radio"
-          name="rtcl_category"
-          id="commercial-plot"
-          value="commercial-plot"
-        />
-      </label>
-    </li>
-    <li class="villa">
-      <label for="villa">
-        <i class="fas fa-home"></i>
-        <span>Villa</span>
-        <input
-          type="radio"
-          name="rtcl_category"
-          id="villa"
-          value="villa"
-        />
-      </label>
-    </li>
-    <li class="lands">
-      <label for="lands">
-        <i class="fas fa-map"></i>
-        <span>Lands</span>
-        <input
-          type="radio"
-          name="rtcl_category"
-          id="lands"
-          value="lands"
-        />
-      </label>
-    </li>
-  </ul>
-</div>
+      <section class="main-banner-wrap1" style="background-image: url('img/slider/slider4.jpg'); background-size: cover;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="main-banner-box1 text-center">
+          <!-- Main Title -->
+<p style="position: relative; top: -20px;">The Top Real estate agency in Amaravati</p>
 
-                </div>
-                <div class="banner-search-wrap">
-                  <div class="rld-main-search">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="box">
-                          <div class="box-top">
-                            <div class="rld-single-input item">
-                              <input
-                                type="text"
-                                placeholder="Enter Kewword here..."
-                              />
-                            </div>
-                            <div class="rld-single-select ml-22">
-                              <select class="select single-select">
-                                <option value="1">Property Type</option>
-                                <option value="2">Family House</option>
-                                <option value="3">Apartment</option>
-                                <option value="3">Condo</option>
-                              </select>
-                            </div>
-                            <div class="rld-single-select item">
-                              <select class="select single-select mr-0">
-                                <option value="1">All Cities</option>
-                                <option value="2">Los Angeles</option>
-                                <option value="3">Chicago</option>
-                                <option value="3">Philadelphia</option>
-                              </select>
-                            </div>
-                            <div class="item rt-filter-btn">
-                              <div class="dropdown-filter item">
-                                <span>
-                                  <i class="fas fa-sliders-h"></i>
-                                </span>
-                              </div>
-                              <div class="filter-button-area">
-                                <a class="filter-btn" href="with-sidebar.html"
-                                  ><span>Search</span
-                                  ><i class="fas fa-search"></i
-                                ></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="explore__form-checkbox-list full-filter">
-                            <div class="row">
-                              <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
-                                <div class="form-group bed">
-                                  <label class="item-bedrooms">Bedrooms</label>
-                                  <div
-                                    class="nice-select form-control wide"
-                                    tabindex="0"
-                                  >
-                                    <span class="current">Any</span>
-                                    <ul class="list">
-                                      <li
-                                        data-value="1"
-                                        class="option selected"
-                                      >
-                                        For Sale
-                                      </li>
-                                      <li data-value="2" class="option">
-                                        For Rent
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
-                                <div class="form-group bath">
-                                  <label class="item-bath">Bathrooms</label>
-                                  <div
-                                    class="nice-select form-control wide"
-                                    tabindex="0"
-                                  >
-                                    <span class="current">Any</span>
-                                    <ul class="list">
-                                      <li
-                                        data-value="1"
-                                        class="option selected"
-                                      >
-                                        1
-                                      </li>
-                                      <li data-value="2" class="option">2</li>
-                                      <li data-value="3" class="option">3</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 py-1 pl-0 pr-0">
-                                <div class="form-group garage">
-                                  <label class="item-garage">Garage</label>
-                                  <div
-                                    class="nice-select form-control wide"
-                                    tabindex="0"
-                                  >
-                                    <span class="current">Any</span>
-                                    <ul class="list">
-                                      <li
-                                        data-value="1"
-                                        class="option selected"
-                                      >
-                                        1
-                                      </li>
-                                      <li data-value="2" class="option">2</li>
-                                      <li data-value="3" class="option">3</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="main-search-field-2 col-12">
-                                <div class="row">
-                                  <div class="col-md-6 pl-0">
-                                    <div class="price-range-wrapper">
-                                      <div class="range-box">
-                                        <div class="price-label">
-                                          Flat Size:
-                                        </div>
-                                        <div
-                                          id="price-range-filter-3"
-                                          class="price-range-filter"
-                                        ></div>
-                                        <div
-                                          class="price-filter-wrap d-flex align-items-center"
-                                        >
-                                          <div class="price-range-select">
-                                            <div
-                                              class="price-range"
-                                              id="price-range-min-3"
-                                            ></div>
-                                            <div class="price-range">-</div>
-                                            <div
-                                              class="price-range"
-                                              id="price-range-max-3"
-                                            ></div>
-                                            <div
-                                              class="price-range range-title"
-                                            >
-                                              sft
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6 pl-0">
-                                    <div class="price-range-wrapper">
-                                      <div class="range-box">
-                                        <div class="price-label">Distance:</div>
-                                        <div
-                                          id="price-range-filter-2"
-                                          class="price-range-filter"
-                                        ></div>
-                                        <div
-                                          class="price-filter-wrap d-flex align-items-center"
-                                        >
-                                          <div class="price-range-select">
-                                            <div
-                                              class="price-range"
-                                              id="price-range-min-2"
-                                            ></div>
-                                            <div class="price-range">-</div>
-                                            <div
-                                              class="price-range"
-                                              id="price-range-max-2"
-                                            ></div>
-                                            <div
-                                              class="price-range range-title"
-                                            >
-                                              km
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                  <h4 class="text-dark">Amenities</h4>
-                                  <ul class="no-ul-list third-row">
-                                    <li>
-                                      <input
-                                        id="a-1"
-                                        class="checkbox-custom"
-                                        name="a-1"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-1"
-                                        class="checkbox-custom-label"
-                                        >Air Condition</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-2"
-                                        class="checkbox-custom"
-                                        name="a-2"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-2"
-                                        class="checkbox-custom-label"
-                                        >Bedding</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-3"
-                                        class="checkbox-custom"
-                                        name="a-3"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-3"
-                                        class="checkbox-custom-label"
-                                        >Heating</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-4"
-                                        class="checkbox-custom"
-                                        name="a-4"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-4"
-                                        class="checkbox-custom-label"
-                                        >Internet</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-5"
-                                        class="checkbox-custom"
-                                        name="a-5"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-5"
-                                        class="checkbox-custom-label"
-                                        >Microwave</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-6"
-                                        class="checkbox-custom"
-                                        name="a-6"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-6"
-                                        class="checkbox-custom-label"
-                                        >Smoking Allow</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-7"
-                                        class="checkbox-custom"
-                                        name="a-7"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-7"
-                                        class="checkbox-custom-label"
-                                        >Terrace</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-8"
-                                        class="checkbox-custom"
-                                        name="a-8"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-8"
-                                        class="checkbox-custom-label"
-                                        >Balcony</label
-                                      >
-                                    </li>
-                                    <li>
-                                      <input
-                                        id="a-9"
-                                        class="checkbox-custom"
-                                        name="a-9"
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        for="a-9"
-                                        class="checkbox-custom-label"
-                                        >Balcony</label
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="filter-button">
-                                <a href="index.html" class="filter-btn1"
-                                  >Apply Filter</a
-                                >
-                                <a
-                                  href="index.html"
-                                  class="filter-btn1 reset-btn"
-                                  >Reset Filter<i class="fas fa-redo-alt"></i
-                                ></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="item-para wow fadeInUp" data-wow-delay=".4s">
-                    We’ve more than
-                    <span class="banner-p">54,000</span> apartments, place &
-                    plot.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <h3 class="item-title wow fadeInUp" data-wow-delay=".4s" style="color: white;">
+<p style="font-weight: bolder; font-size: 25px;">
+  Plots for sale 
+  <a href="with-sidebar2.html" style="text-decoration: none; color: white;">Residential</a>, 
+  <a href="your-commercial-link" style="text-decoration: none; color: white;">Commercial</a>, 
+  <a href="your-villa-link" style="text-decoration: none; color: white;">Villa</a> & 
+  <a href="your-lands-link" style="text-decoration: none; color: white;">Lands</a>
+</p>
+    
+          </h3>
+          <!-- Property Type List -->
+          
+          <!-- Search Bar -->
+          <div class="search-bar wow fadeInUp mt-4" data-wow-delay=".8s">
+           <form action="#" method="GET" style="display: flex; justify-content: center;">
+  <input type="text" placeholder="Address, School, City, Zip or Neighborhood" class="search-input" style="padding: 10px; width: 400px; border-radius: 20px 0 0 20px; border: 1px solid #ccc; color: white; background-color: white;">
+  <button type="submit" class="search-btn" style="background-color: #15c39a; padding: 10px 20px; border: none; border-radius: 0 20px 20px 0;">
+    <i class="fas fa-search" style="color: white;"></i>
+  </button>
+</form>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
       <!--=====================================-->
       <!--=   Brand     Start                 =-->
       <!--=====================================-->
@@ -2227,13 +1832,12 @@
                   </div>
                   <div class="item-link">
                     <ul>
-                      <li><a href="about-1.html">About Us </a></li>
+                      <li><a href="with-sidebar2.html">Buy </a></li>
                       <li>
-                        <a href="blog-details1.html">Blogs & Articles </a>
+                        <a href="blog-details1.html">Sell </a>
                       </li>
-                      <li><a href="about-1.html">Terms & Conditions</a></li>
-                      <li><a href="about-1.html">Privacy Policy </a></li>
-                      <li><a href="contact.html">Contact Us </a></li>
+                      <li><a href="about-1.html">FSI R Calculator</a></li>
+                      <li><a href="about-1.html">News </a></li>
                     </ul>
                   </div>
                 </div>
@@ -2428,7 +2032,7 @@
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="copyright-area2">
-                  <p>2022© All rightre served by RadiusTheme</p>
+                  <p>©2015-2024 Amaravati Homes All right reserved.</p>
                 </div>
               </div>
             </div>
