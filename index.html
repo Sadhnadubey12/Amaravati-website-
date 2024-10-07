@@ -60,6 +60,21 @@
     color: black;
   }
   </style>
+
+  <style>
+  .search-input {
+    width: 500px; /* Default width for larger screens */
+  }
+
+  /* Media query for mobile screens */
+  @media (max-width: 600px) {
+    .search-input {
+      width: 100%; /* Full width on mobile */
+      max-width: 90%; /* Ensuring some margin on the sides */
+    }
+  }
+</style>
+
   
 
   <body class="sticky-header">
@@ -234,8 +249,8 @@
           
           <!-- Search Bar -->
           <div class="search-bar wow fadeInUp mt-4" data-wow-delay=".8s">
-           <form action="#" method="GET" style="display: flex; justify-content: center;">
-  <input type="text" placeholder="Address, School, City, Zip or Neighborhood" class="search-input" style="padding: 10px; width: 400px; border-radius: 20px 0 0 20px; border: 1px solid #ccc; color: white; background-color: white;">
+          <form action="#" method="GET" style="display: flex; justify-content: center;">
+  <input type="text" placeholder="Address, School, City, Zip or Neighborhood" class="search-input" style="padding: 10px; width: 500px; border-radius: 20px 0 0 20px; border: 1px solid #ccc; color: white; background-color: white;">
   <button type="submit" class="search-btn" style="background-color: #15c39a; padding: 10px 20px; border: none; border-radius: 0 20px 20px 0;">
     <i class="fas fa-search" style="color: white;"></i>
   </button>
