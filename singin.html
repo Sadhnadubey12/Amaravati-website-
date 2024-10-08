@@ -53,32 +53,28 @@
     />
   </head>
 
-  <style>
-    .breadcrumb-wrap {
-      background-image: url("./img/slider/slider2.jpg"); /* Replace with the actual image URL or file path */
-      background-size: cover;
-      background-position: center;
-      height: 250px;
-      padding: 50px 0;
-      color: white; /* Adjust text color to make it more visible over the image */
-    }
+  
+<style>
+  .breadcrumb-wrap {
+    background-image: url('./img/slider/slider2.jpg'); /* Replace with the actual image URL or file path */
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    padding: 50px 0;
+    color: white; /* Adjust text color to make it more visible over the image */
+  }
 
-    .breadcrumb {
-      background: rgba(
-        0,
-        0,
-        0,
-        0.5
-      ); /* Semi-transparent background to enhance readability */
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
+  .breadcrumb {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to enhance readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
 
-    .breadcrumb-item.active {
-      font-weight: bold;
-      color: #fff; /* Text color for the active item */
-    }
-  </style>
+  .breadcrumb-item.active {
+    font-weight: bold;
+    color: #fff; /* Text color for the active item */
+  }
+</style>
 
   <body class="sticky-header">
     <!--[if IE]>
@@ -96,9 +92,11 @@
     <!--=   Preloader     End               =-->
     <!--=====================================-->
     <div class="wrapper" id="wrapper">
+       <!--=====================================-->
+      <!--=   Header     Start             =-->
       <!--=====================================-->
-      <!--=   Header     Start                =-->
-      <!--=====================================-->
+
+
 
      <header class="rt-header sticky-on">
     <div id="sticky-placeholder"></div>
@@ -225,99 +223,114 @@
         </div>
       </div>
       <!--=====================================-->
+      <!--=   header end=-->
+      <!--=====================================-->
+      <!--=====================================-->
       <!--=   Breadcrumb     Start            =-->
       <!--=====================================-->
 
-      <div class="breadcrumb-wrap">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                My Account
-              </li> -->
-            </ol>
-          </nav>
-        </div>
-      </div>
+     <div class="breadcrumb-wrap">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <!-- <li class="breadcrumb-item active" aria-current="page">
+          Login
+        </li> -->
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
       <!--=====================================-->
       <!--=   Account     Start               =-->
       <!--=====================================-->
 
-      <main class="site-main content-area">
+
+    <main class="site-main content-area">
         <div class="container" style="margin-top: -50px;">
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 col-12">
-              <div class="page-content-block">
-                <div class="col-md-12 rtcl-login-form-wrap">
-                  <h2>Login</h2>
-                  <form
-                    id="rtcl-login-form"
-                    class="form-horizontal"
-                    method="post"
-                    novalidate="novalidate"
-                  >
-                    <div class="form-group">
-                      <label for="rtcl-user-login" class="control-label">
-                        Username or E-mail
-                        <strong class="rtcl-required">*</strong>
-                      </label>
-                      <input
-                        type="text"
-                        name="username"
-                        autocomplete="username"
-                        value=""
-                        id="rtcl-user-login"
-                        class="form-control"
-                        required=""
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="rtcl-user-pass" class="control-label">
-                        Password <strong class="rtcl-required">*</strong>
-                      </label>
-                      <input
-                        type="password"
-                        name="password"
-                        id="rtcl-user-pass"
-                        autocomplete="current-password"
-                        class="form-control"
-                        required=""
-                      />
-                    </div>
-                    <div class="form-group d-flex align-items-center">
-                      <button
-                        type="submit"
-                        name="rtcl-login"
-                        class="btn btn-primary"
-                        value="login"
-                      >
-                        Login
-                      </button>
-                      <div class="form-check">
-                        <input
-                          type="checkbox"
-                          name="rememberme"
-                          id="rtcl-rememberme"
-                          value="forever"
-                        />
-                        <label class="form-check-label" for="rtcl-rememberme">
-                          Remember Me</label
-                        >
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <p class="rtcl-forgot-password">
-                        <a href="#">Forgot Your Password</a>
-                      </p>
-                    </div>
-                  </form>
-                </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="page-content-block">
+                        <div class="col-md-12 rtcl-login-form-wrap">
+                            <h2>Sign in</h2>
+                          
+                             <form
+              id="rtcl-signup-form"
+              class="form-horizontal"
+              method="post"
+              novalidate="novalidate"
+              action="signup_handler.php"
+              onsubmit="return validateForm()"
+              style="margin-top: 20px;"
+            >
+              <div class="form-group">
+                <label for="rtcl-username" class="control-label">
+                  Username <strong class="rtcl-required">*</strong>
+                </label>
+                <input
+                  type="text"
+                  name="username"
+                  id="rtcl-username"
+                  class="form-control"
+                  required=""
+                  pattern="[A-Za-z ]+"
+                  title="Username should contain only letters."
+                  style="margin-top: 10px;"
+                />
               </div>
+              <div class="form-group">
+                <label for="rtcl-email" class="control-label">
+                  E-mail <strong class="rtcl-required">*</strong>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  id="rtcl-email"
+                  class="form-control"
+                  required=""
+                  style="margin-top: 10px;"
+                />
+              </div>
+              <div class="form-group">
+                <label for="rtcl-password" class="control-label">
+                  Password <strong class="rtcl-required">*</strong>
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="rtcl-password"
+                  autocomplete="new-password"
+                  class="form-control"
+                  required=""
+                  style="margin-top: 10px;"
+                />
+              </div>
+              <div class="form-group d-flex align-items-center" style="margin-top: 20px;">
+                <button
+                  type="submit"
+                  name="rtcl-signup"
+                  class="btn btn-primary"
+                  value="signup"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <div class="form-group" style="margin-top: 10px;">
+                <p class="rtcl-account-exists">
+                  Already have an account?
+                  <a href="account.html">Login here</a>
+                </p>
+              </div>
+            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </main>
+    </main>
+       
 
       <!--=====================================-->
       <!--=   Footer     Start                =-->
@@ -589,6 +602,7 @@
         </div>
       </footer>
 
+
       <!-- start back to top -->
       <a href="javascript:void(0)" id="back-to-top">
         <i class="fas fa-angle-double-up"></i>
@@ -642,5 +656,8 @@
 
     <!-- Main Js Start Here -->
     <script src="js/main.js"></script>
+   
+
   </body>
+
 </html>
