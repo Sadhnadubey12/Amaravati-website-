@@ -54,6 +54,32 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    .breadcrumb-wrap {
+      background-image: url("img/slider/slider4.jpg"); /* Replace with the actual image URL or file path */
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      padding: 50px 0;
+      color: white; /* Adjust text color to make it more visible over the image */
+    }
+
+    .breadcrumb {
+      background: rgba(
+        0,
+        0,
+        0,
+        0.5
+      ); /* Semi-transparent background to enhance readability */
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .breadcrumb-item.active {
+      font-weight: bold;
+      color: #fff; /* Text color for the active item */
+    }
+  </style>
 
   <body class="sticky-header">
     <!--[if IE]>
@@ -71,45 +97,52 @@
     <!--=   Preloader     End               =-->
     <!--=====================================-->
     <div class="wrapper" id="wrapper">
+       <!--=====================================-->
+      <!--=   Header Start =-->
       <!--=====================================-->
-      <!--=   Header     Start             =-->
-      <!--=====================================-->
-     <header class="rt-header sticky-on">
-    <div id="sticky-placeholder"></div>
-    <div id="navbar-wrap" class="header-menu menu-layout1 header-menu menu-layout2" style="background-color: white; padding: 3px 0;">
-        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-            <!-- Logo Section -->
-            <div class="logo-area" style="display: flex; align-items: center;">
-                <a href="index.html" class="temp-logo">
-                    <img src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg" width="120" height="40" alt="logo" class="img-fluid" style="margin-right: 10px;" />
-                </a>
-                <div class="logo-text" style="color: black; font-size: 20px; font-weight: bold;">
-                    Amaravati Homes.in <br />
-                    <span style="font-size: 12px; color: hsl(0, 2%, 9%); margin-left: 13px;">Property Getway to Amaravati</span>
+
+      <header class="header">
+        <div id="rt-sticky-placeholder"></div>
+        <div id="header-menu" class="header-menu menu-layout1">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-xl-2 col-lg-2">
+                <div class="logo-area">
+                  <a href="index.html" class="temp-logo">
+                    <img
+                      src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg"
+                      width="157"
+                      height="30"
+                      alt="logo"
+                      class="img-fluid"
+                      style="height: 120px"
+                    />
+                  </a>
                 </div>
-            </div>
-
-            <!-- Navigation Section -->
-            <nav id="dropdown" class="template-main-menu template-main-menu-3" style="display: flex; justify-content: center; flex-grow: 1;">
-                <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 30px;">
-                    <li style="display: inline-block;">
-                        <a href="without-sidebar.html" style="color: black; text-decoration: none; font-size: 16px;">Buy</a>
+              </div>
+              <div
+                class="col-xl-6 col-lg-6 d-flex justify-content-center position-static"
+              >
+                <nav id="dropdown" class="template-main-menu">
+                  <ul>
+                    <li style="display: inline-block">
+                      <a href="buy.html">Buy</a>
                     </li>
-                    <li style="display: inline-block;">
-                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">Sell</a>
+                    <li style="display: inline-block">
+                      <a href="sell.html">Sell</a>
                     </li>
-                    <li style="display: inline-block;">
-                        <a href="blog-details1.html" style="color: black; text-decoration: none; font-size: 16px;">FSI R Calculator</a>
+                    <li style="display: inline-block">
+                      <a href="blog-details1.html">FSI R Calculator</a>
                     </li>
-                    <li style="display: inline-block;">
-                        <a href="index.html" style="color: black; text-decoration: none; font-size: 16px;">News</a>
+                    <li style="display: inline-block">
+                      <a href="news.html">News</a>
                     </li>
-                </ul>
-            </nav>
-
-            <!-- Account and Add Property Section -->
-            <div class="header-action-layout1" style="display: flex; align-items: center;">
-                <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-xl-4 col-lg-4 d-flex justify-content-end">
+                <div class="header-action-layout1">
+                  <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
                    <li class="action-item-style view-map" style="display: inline-block;">
     <a href="https://www.google.com/maps" style="color: white; background-color:  #15c39a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;" target="_blank" title="View Map">
          Map View
@@ -118,12 +151,12 @@
 
 </li>
 <li class="" style="display: inline-block; margin: 0; padding: 0;">
-    <a href="singin.html" style="color: white; background-color: black; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign In">
+    <a href="singin.html" style="color: white; background-color:#15c39a; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign In">
         <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Sign In
     </a>
 </li>
 <li class="" style="display: inline-block; margin: 0; padding: 0;">
-    <a href="account.html" style="color: white; background-color: black; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+    <a href="account.html" style="color: white; background-color:#15c39a; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
         <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Login
     </a>
 </li>
@@ -133,27 +166,21 @@
 
 
                 </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-     </header>
+      </header>
       <div
         class="rt-header-menu mean-container position-relative"
         id="meanmenu"
       >
         <div class="mean-bar">
           <a href="index.html">
-            <img
-              src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg"
-              width="157"
-              height="20"
-              alt="logo"
-              class="img-fluid"
-              alt="logo"
-              class="img-fluid"
-            />
+            <img src="img/WhatsApp Image 2024-10-04 at 8.19.42 PM.jpeg" style="height: 100px;"
+            alt="logo" class="img-fluid" />
           </a>
-
           <div class="mean-bar--right">
             <div class="actions search">
               <a href="#template-search" class="item-icon" title="Search">
@@ -171,7 +198,7 @@
             </span>
           </div>
         </div>
-        <div class="rt-slide-nav">
+       <div class="rt-slide-nav">
           <div class="offscreen-navigation">
             <nav class="menu-main-primary-container">
               <ul class="menu">
@@ -180,16 +207,16 @@
                  
                 </li> -->
                 <li class="list">
-                  <a href="without-sidebar.html">Buy</a>
+                  <a href="buy.html">Buy</a>
                 </li>
                  <li class="#">
-                  <a href="index.html">Sell</a>
+                  <a href="sell.html">Sell</a>
                 </li>
                  <li class="#">
                   <a href="blog-details1.html">FSI R Calculator</a>
                 </li>
                  <li class="#">
-                  <a href="index.html">News</a>
+                  <a href="news.html">News</a>
                </li>
                 </li>
                
@@ -198,25 +225,25 @@
           </div>
         </div>
       </div>
+
       <!--=====================================-->
-      <!--=   Header  end =-->
+      <!--=   Header End  =-->
       <!--=====================================-->
       <!--=====================================-->
       <!--=   Breadcrumb     Start            =-->
       <!--=====================================-->
-<!-- 
-      <div class="breadcrumb-wrap breadcrumb-wrap-2">
+<div class="breadcrumb-wrap" >
         <div class="container">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                All Listing
-              </li>
+                My Account
+              </li> -->
             </ol>
           </nav>
         </div>
-      </div> -->
+      </div>
       <!--=====================================-->
       <!--=   Grid     Start                  =-->
       <!--=====================================-->
@@ -1038,7 +1065,7 @@
         </div>
       </section> -->
       <!--=====================================-->
-      <!--=   Footer     Start                =-->
+      <!--=   Footer  Start                =-->
       <!--=====================================-->
 
       <footer class="footer-area">
@@ -1054,12 +1081,13 @@
                       height="40"
                       alt="logo"
                       class="img-fluid"
-                      style="margin-bottom: -45px;"
+                      style="margin-bottom: -45px"
                     />
                   </div>
                   <p>
-  Amaravati Homes is your Property Gateway to Amaravati, offering a trusted path to your dream home.
-</p>
+                    Amaravati Homes is your Property Gateway to Amaravati,
+                    offering a trusted path to your dream home.
+                  </p>
 
                   <div class="item-social">
                     <ul>
@@ -1099,12 +1127,12 @@
                   </div>
                   <div class="item-link">
                     <ul>
-                      <li><a href="without-sidebar.html">Buy </a></li>
+                      <li><a href="buy.html">Buy </a></li>
                       <li>
                         <a href="blog-details1.html">Sell </a>
                       </li>
                       <li><a href="blog-details1.html">FSI R Calculator</a></li>
-                      <li><a href="about-1.html">News </a></li>
+                      <li><a href="news.html">News </a></li>
                     </ul>
                   </div>
                 </div>
@@ -1266,17 +1294,16 @@
                   <div class="footer-location">
                     <ul>
                       <li class="item-map">
-                        <i class="fas fa-map-marker-alt"></i>121 King St,
-                        Melbourne den 3000, Australia
+                        <i class="fas fa-map-marker-alt"></i>D.No.3-172,Global High School(Campus),Venkatapalem,Thulluru Mandal,Amaravati,Guntur Dt.,A.P.
                       </li>
                       <li>
                         <a href="mailto:info@example.com"
-                          ><i class="fas fa-envelope"></i>info@example.com</a
+                          ><i class="fas fa-envelope"></i>info@amaravatihomes.in</a
                         >
                       </li>
                       <li>
                         <a href="tel:+123596000"
-                          ><i class="fas fa-phone-alt"></i>(+123) 596 000</a
+                          ><i class="fas fa-phone-alt"></i>+91 7799963366</a
                         >
                       </li>
                     </ul>
@@ -1306,6 +1333,10 @@
           </div>
         </div>
       </footer>
+
+       <!--=====================================-->
+      <!--=   Footer  End                =-->
+      <!--=====================================-->
 
       <!-- start back to top -->
       <a href="javascript:void(0)" id="back-to-top">
