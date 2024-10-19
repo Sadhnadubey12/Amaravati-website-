@@ -143,7 +143,9 @@
                 <div class="header-action-layout1">
                   <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
                    <li class="action-item-style view-map" style="display: inline-block;">
-    <a href="https://www.google.com/maps" style="color: white; background-color:  #15c39a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;" target="_blank" title="View Map">
+    <a href="https://amaravatihomes.carto.com/builder/6a2479cb-5b53-40bc-aa96-fa00a05c02ef/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B16.51238386124282%2C80.3625011444092%5D%2C%22sw%22%3A%5B16.56035348896074%2C80.47356605529787%5D%2C%22center%22%3A%5B16.536370165616493%2C80.41803359985353%5D%2C%22zoom%22%3A14%7D%7D" 
+       style="color: white; background-color: #15c39a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;" 
+       target="_blank" title="View Map">
          Map View
     </a>
 </li>
@@ -475,71 +477,71 @@
     >
       FSI R Calculator
     </h2>
-    <div
+   <div
+  style="
+    background-color: #e0f7e9;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  "
+>
+  <form id="fsi-r-calculator">
+    <label for="plotArea" style="color: #333; font-size: 16px"
+      >Enter Plot Area (in square meters):</label
+    >
+    <input
+      type="number"
+      id="plotArea"
+      required
+      placeholder="Enter plot area"
       style="
-        background-color: #e0f7e9;
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 700px;
-        margin: 0 auto;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "
+    />
+
+    <label for="fsi" style="color: #333; font-size: 16px">Enter FSI:</label>
+    <input
+      type="number"
+      id="fsi"
+      step="0.1"
+      required
+      placeholder="Enter FSI value"
+      style="
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "
+    />
+
+    <button
+      type="submit"
+      style="
+        background-color: #2e8b57;
+        color: #fff;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
       "
     >
-      <form id="fsi-r-calculator">
-        <label for="plotArea" style="color: #333; font-size: 16px"
-          >Enter Plot Area (in square meters):</label
-        >
-        <input
-          type="number"
-          id="plotArea"
-          required
-          placeholder="Enter plot area"
-          style="
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-          "
-        />
+      Calculate
+    </button>
 
-        <label for="fsi" style="color: #333; font-size: 16px">Enter FSI:</label>
-        <input
-          type="number"
-          id="fsi"
-          step="0.1"
-          required
-          placeholder="Enter FSI value"
-          style="
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-          "
-        />
-
-        <button
-          type="submit"
-          style="
-            background-color: #2e8b57;
-            color: #fff;
-            padding: 14px 28px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-          "
-        >
-          Calculate
-        </button>
-
-        <div
-          id="result"
-          style="margin-top: 20px; font-size: 18px; color: #333"
-        ></div>
-      </form>
-    </div>
+    <div
+      id="result"
+      style="margin-top: 20px; font-size: 18px; color: #333"
+    ></div>
+  </form>
+</div>
   </div>
 </section>
 
@@ -871,5 +873,29 @@
 
     <!-- Main Js Start Here -->
     <script src="js/main.js"></script>
+
+    
+
+<script>
+  document.getElementById('fsi-r-calculator').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Get input values
+    const plotArea = document.getElementById('plotArea').value;
+    const fsi = document.getElementById('fsi').value;
+    
+    // Validate input
+    if (plotArea > 0 && fsi > 0) {
+      // Calculate the result
+      const result = plotArea * fsi;
+      // Display the result
+      document.getElementById('result').textContent = 'Permissible Built-up Area: ' + result + ' sq meters';
+    } else {
+      // Display error if input is invalid
+      document.getElementById('result').textContent = 'Please enter valid values.';
+    }
+  });
+</script>
+
   </body>
 </html>
