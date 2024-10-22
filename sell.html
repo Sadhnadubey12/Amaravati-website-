@@ -54,6 +54,27 @@
       rel="stylesheet"
     />
   </head>
+
+  <style>
+    @media (max-width: 768px) {
+  .main-banner-box1 {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .rld-single-input {
+    margin-bottom: 10px; /* Space between inputs */
+  }
+
+  .banner-search-wrap {
+    margin: 0 auto; /* Centering the form */
+  }
+}
+  </style>
+
+  
+
+
+
   <style>
     .breadcrumb-wrap {
       background-image: url("img/slider/slider4.jpg"); /* Replace with the actual image URL or file path */
@@ -97,7 +118,7 @@
     <!--=   Preloader     End               =-->
     <!--=====================================-->
     <div class="wrapper" id="wrapper">
-       <!--=====================================-->
+      <!--=====================================-->
       <!--=   Header Start =-->
       <!--=====================================-->
 
@@ -141,35 +162,34 @@
                 </nav>
               </div>
               <div class="col-xl-4 col-lg-4 d-flex justify-content-end">
-                <div class="header-action-layout1">
-                  <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
-                   <li class="action-item-style view-map" style="display: inline-block;">
+  <div class="header-action-layout1">
+    <ul class="action-list" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 10px;">
+      <li class="action-item-style view-map" style="display: inline-block;">
     <a href="https://amaravatihomes.carto.com/builder/6a2479cb-5b53-40bc-aa96-fa00a05c02ef/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B16.51238386124282%2C80.3625011444092%5D%2C%22sw%22%3A%5B16.56035348896074%2C80.47356605529787%5D%2C%22center%22%3A%5B16.536370165616493%2C80.41803359985353%5D%2C%22zoom%22%3A14%7D%7D" 
        style="color: white; background-color: #15c39a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;" 
        target="_blank" title="View Map">
          Map View
     </a>
 </li>
+      <li class="" style="display: inline-block; margin: 0; padding: 0;">
+        <a href="singin.html" style="color: white; background-color: #15c39a; padding: 5px 8px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 12px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign In">
+          <i class="flaticon-user-1" style="font-size: 14px; margin-right: 3px; color: white;"></i> Sign In
+        </a>
+      </li>
+      <li class="" style="display: inline-block; margin: 0; padding: 0;">
+        <a href="account.html" style="color: white; background-color: #15c39a; padding: 5px 8px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 12px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+          <i class="flaticon-user-1" style="font-size: 14px; margin-right: 3px; color: white;"></i> Login
+        </a>
+      </li>
+      <li class="" style="display: inline-block; margin: 0; padding: 0;">
+        <a href="#" style="color: white; background-color: #15c39a; padding: 5px 8px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 12px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search">
+          <i class="flaticon-search" style="font-size: 14px; margin-right: 3px; color: white;"></i> Search
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-</li>
-<li class="" style="display: inline-block; margin: 0; padding: 0;">
-    <a href="singin.html" style="color: white; background-color:#15c39a; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign In">
-        <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Sign In
-    </a>
-</li>
-<li class="" style="display: inline-block; margin: 0; padding: 0;">
-    <a href="account.html" style="color: white; background-color:#15c39a; padding: 5px 10px; border-radius: 15px; text-decoration: none; display: flex; align-items: center; font-size: 14px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
-        <i class="flaticon-user-1" style="font-size: 16px; margin-right: 5px; color: white;"></i> Login
-    </a>
-</li>
-
-
-
-
-
-                </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -231,21 +251,98 @@
       <!--=====================================-->
       <!--=   Header End  =-->
       <!--=====================================-->
+     
       <!--=====================================-->
-      <!--=   Breadcrumb     Start            =-->
+      <!--=   Main Banner     Start           =-->
       <!--=====================================-->
-<div class="breadcrumb-wrap" >
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                My Account
-              </li> -->
-            </ol>
-          </nav>
+ 
+
+ <section class="main-banner-wrap1 main-banner-wrap5" data-bg-image="img/slider/slider4.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="main-banner-box1 main-banner-box5">
+          <h1 class="item-title wow fadeInUp" data-wow-delay=".4s">Find a Property</h1>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Search for your property from more than <strong>500 Plots in Amaravati</strong>.
+          </p>
+          <!-- Section first  -->
+          <div class="banner-search-wrap">
+            <div class="rld-main-search">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="box">
+                    <div class="box-top">
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Township" />
+                      </div>
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Colony" />
+                      </div>
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Block" />
+                      </div>
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Plot No" />
+                      </div>
+                       <div class="rld-single-select item">
+                        <select class="select single-select">
+                          <option value="1">Plot Category</option>
+                          <option value="1">Property Type</option>
+                          <option value="2">Residential</option>
+                          <option value="3">Commercial</option>
+                          <option value="4">Villa</option>
+                          <option value="5">Agricultural land</option>
+                          <option value="5">Non Agricultural land</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section first end -->
+
+          <!-- section 2 start -->
+         <div class="banner-search-wrap">
+            <div class="rld-main-search">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="box">
+                    <div class="box-top">
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Township" />
+                      </div>
+                       <div class="rld-single-input item">
+                        <input type="text" placeholder="Colony" />
+                      </div>
+                <div class="rld-single-select item" style="display: flex; justify-content: center; margin-top: 10px;">
+  <button type="submit" class="submit-button" style="padding: 3px 8px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: -2px; margin-bottom: 5px;">Submit</button>
+</div>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section 2 end -->
+
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
       <!--=====================================-->
       <!--=   Grid     Start                  =-->
       <!--=====================================-->
