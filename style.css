@@ -5008,7 +5008,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   content: "";
   height: 100%;
   width: 62%;
-  background-color: var(--rt-primary-color);
+  background-color:  #164557;
   position: absolute;
   bottom: 0;
   left: 0;

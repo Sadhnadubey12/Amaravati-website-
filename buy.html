@@ -211,14 +211,14 @@
       <!--=   Main Banner     Start           =-->
       <!--=====================================-->
 
-   <section class="main-banner-wrap1 main-banner-wrap5" data-bg-image="img/slider/slider4.jpg">
+   <section class="main-banner-wrap1 main-banner-wrap5" data-bg-image="img/banner/WhatsApp\ Image\ 2024-11-14\ at\ 1.39.14\ PM.jpeg">
   <div class="container">
     <div class="row">
       <div class="col-xl-12">
         <div class="main-banner-box1 main-banner-box5">
           <h1 class="item-title wow fadeInUp" data-wow-delay=".4s">Find a Property</h1>
-          <p class="wow fadeInUp" data-wow-delay=".6s">
-            Search for your property from more than <strong>500 Plots in Amaravati</strong>.
+          <p class="wow fadeInUp" data-wow-delay=".6s" style="color: #164557; font-weight: bold;">
+            Search for your property from more than <strong class="plot" style="color: #164557; font-weight: bold;">500 Plots in Amaravati</strong>.
           </p>
           <div class="banner-search-wrap">
             <div class="rld-main-search">
@@ -274,8 +274,8 @@
                 </div>
               </div>
             </div>
-            <p class="item-para wow fadeInUp" data-wow-delay=".4s">
-              We’ve more than <span class="banner-p">500</span> plots, villas, and properties available in Amaravati.
+            <p class="item-para wow fadeInUp" data-wow-delay=".4s" style="color: #164557; font-weight: bold;">
+              We’ve more than <span class="banner-p" style="color:  #1a5066;">500</span> plots, villas, and properties available in Amaravati.
             </p>
           </div>
         </div>
@@ -491,6 +491,7 @@
       <!--=   Property     Start              =-->
       <!--=====================================-->
 
+      
       <section class="property-wrap1">
         <div class="container">
           <div class="isotope-wrap">
@@ -502,16 +503,26 @@
                   >
                   <h2 class="section-title">Latest Properties</h2>
                   <div class="bg-title-wrap" style="display: block">
-                    <span class="background-title solid">Properties</span>
+                    <span class="background-title solid">Amaravati</span>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-12">
-                <div class="isotope-classes-tab">
+                <!-- <div class="isotope-classes-tab">
                   <a class="current nav-item" data-filter="*">All Types</a>
-                  <a class="nav-item" data-filter=".for-sell">For Sell</a>
-                  <a class="nav-item" data-filter=".for-rent">For Rent</a>
-                </div>
+                  <a class="nav-item" data-filter=".for-sell">Residential</a>
+                  <a class="nav-item" data-filter=".for-rent">Commercial</a>
+                   <a class="nav-item" data-filter=".for-rent">Villa</a>
+                </div> -->
+                  
+<div class="isotope-classes-tab">
+    <a class="current nav-item" href="index.html">All Types</a>
+    <a class="nav-item" href="residential.html">Residential</a>
+    <a class="nav-item" href="commercial.html">Commercial</a>
+    <a class="nav-item" href="villa.html">Villa</a>
+</div>
+
+
               </div>
             </div>
             <div class="row featuredContainer">
@@ -962,6 +973,7 @@
           </div>
         </div>
       </section>
+      
      <!--=====================================-->
       <!--=   Property     end              =-->
       <!--=====================================-->
@@ -1193,7 +1205,7 @@
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-insta">
                   <div class="footer-title footer-title-style2">
-                    <h3>Instagram</h3>
+                    <h3>About us</h3>
                   </div>
                   <div class="insta-link">
                     <ul>
@@ -1444,5 +1456,16 @@
 
     <!-- Main Js Start Here -->
     <script src="js/main.js"></script>
+    
+<script>
+// JavaScript to handle link clicks
+document.querySelectorAll('.isotope-classes-tab .nav-item').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent the default anchor behavior
+        const pageUrl = this.getAttribute('href');  // Get the page URL from href
+        window.location.href = pageUrl;  // Redirect to the page
+    });
+});
+</script>
   </body>
 </html>

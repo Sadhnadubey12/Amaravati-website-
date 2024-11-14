@@ -55,6 +55,40 @@
     />
   </head>
 
+  
+<!-- CSS for responsive styling for our services -->
+<style>
+    .services-section {
+        margin-bottom: 40px; /* Space below the services section */
+    }
+
+    .service-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .service-box {
+        background-color: #e6ecf7;
+        padding: 15px;
+        border-radius: 5px;
+        width: 45%; /* Reduced width */
+    }
+
+    /* Responsive styling for mobile view */
+    @media (max-width: 768px) {
+        .service-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-box {
+            width: 90%; /* Full width for mobile */
+        }
+    }
+</style>
+
   <style>
     .search-input::placeholder {
       color: black;
@@ -227,7 +261,7 @@
       <section
         class="main-banner-wrap1"
         style="
-          background-image: url('img/slider/slider4.jpg');
+          background-image: url('img/banner/WhatsApp\ Image\ 2024-11-14\ at\ 1.39.14\ PM.jpeg');
           background-size: cover;
         "
       >
@@ -321,15 +355,15 @@
       <!--=   About     Start                 =-->
       <!--=====================================-->
 
-     <section class="about-wrap1 motion-effects-wrap">
-    <div class="shape-img1">
+     <section class="about-wrap1 motion-effects-wrap" >
+    <div class="shape-img1" >
         <img src="img/svg/video-bg-2.svg" alt="shape" width="455" height="516" />
     </div>
-    <div class="container">
-        <div class="row">
+    <div class="container" >
+        <div class="row" >
             <div class="col-lg-6">
-                <div class="about-box1 wow fadeInLeft" data-wow-delay=".3s">
-                    <div class="">
+                <div class="about-box1 wow fadeInLeft" data-wow-delay=".3s" >
+                    <div class="" >
                         <div class="motion-effects1">
                             <img src="img/figure/shape7.png" alt="shape" width="95" height="87" />
                         </div>
@@ -337,7 +371,7 @@
                             <img src="img/figure/shape8.png" alt="shape" width="90" height="46" />
                         </div>
                     </div>
-                    <div class="item-img">
+                    <div class="item-img" >
                         <a href="single-listing1.html"><img src="./images.jpg" alt="about" width="626" height="485" /></a>
                     </div>
                    
@@ -345,25 +379,33 @@
             </div>
             <div class="col-lg-6">
                 <div class="about-box2 wow fadeInRight" data-wow-delay=".5s">
-                    <div class="item-heading-left mb-bottom">
-                        <span class="section-subtitle">Why Choose Amaravati Homes</span>
-                        <h2 class="section-title">Your Property Gateway to Amaravati</h2>
-                        <div class="bg-title-wrap" style="display: block">
-                            <span class="background-title solid">Amaravati</span>
-                        </div>
-                    </div>
-                    <p>
-                        Amaravati Homes offers a comprehensive range of services for buying and selling residential, commercial, villa plots, and lands. We ensure fair advice and hassle-free transactions with our expertise in property dealings.
-                    </p>
+                 <div class="item-heading-left mb-bottom">
+    <h2 class="section-title">
+        <span style="color: #666;">ABOUT OUR COMPANY</span>
+    </h2>
+</div>
+<p style="color: black;">
+    Amaravati Homes was founded in 2014 to provide a professional real estate platform for Amaravati, the capital city of Andhra Pradesh. Our mission is to help you find residential, commercial, and villa plots, along with land in and around the Amaravati area.
+</p>
+
+
                     <div class="about-list">
+                       <h5 style="font-weight: bold; color: #666;">
+        <span style="color:  #15c39a; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">WHAT WE OFFER YOU</span>
+    </h5>
                         <ul>
-                            <li><i class="fas fa-check"></i>Fair Advice</li>
-                            <li><i class="fas fa-check"></i>Current Market Trends</li>
-                            <li><i class="fas fa-check"></i>Best Price Options</li>
-                            <li><i class="fas fa-check"></i>Proper Legal Documentation</li>
-                            <li><i class="fas fa-check"></i>Hassle-Free Transactions</li>
+                            <li><i class="fas fa-check"></i>Advice on what property to Buy and in which area.</li>
+                            <li><i class="fas fa-check"></i>Current market Trends.</li>
+                            <li><i class="fas fa-check"></i>Best price options for Buyers and Sellers.</li>
+                            <li><i class="fas fa-check"></i>Proper legal Documentations.</li>
+                            <li><i class="fas fa-check"></i>Hassle-Free Transactions.</li>
                         </ul>
                     </div>
+
+
+
+
+
                     <!-- <div class="about-button">
                         <a href="single-listing1.html" class="item-btn">Learn More</a>
                     </div> -->
@@ -372,6 +414,34 @@
         </div>
     </div>
 </section>
+
+<div class="services-section" style="margin-bottom: 40px;">
+    <h2 style="color: #666; text-align: center;">OUR <span style="color:#15c39a;">SERVICES</span></h2>
+    
+    <!-- Flex container for responsive layout -->
+    <div class="service-container">
+        
+        <div class="service-box">
+            <h3 style="color:#15c39a;">PROPERTY TRADING SERVICE</h3>
+            <ul>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> Our objective is to offer efficient property trading services to all our esteemed clients & satisfy their requirements.</li>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> We have earned a good reputation from all our clients. We also boast a great repeat record of highly satisfied clients.</li>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> We have the local neighborhood knowledge to assist you in your search for a perfect property, be it for residential or commercial purpose.</li>
+            </ul>
+        </div>
+
+        <div class="service-box">
+            <h3 style="color:#15c39a;">VALUATION & ADVISORY SERVICES</h3>
+            <ul>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> Never in the history of property trading has valuation taken a more pivotal role than in today's business climate.</li>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> Our valuation and advisory services are designed to deliver insight into a property's fundamentals, its competitors, and the overall market dynamics affecting value.</li>
+                <li><i class="fas fa-check" style="color:#15c39a;"></i> We believe that valuation can be a strategic asset for investors and owners, provided that reporting is clear, prompt, and addresses the big picture.</li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
 
       
      <!--=====================================-->
@@ -399,11 +469,21 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-12">
-                <div class="isotope-classes-tab">
+                <!-- <div class="isotope-classes-tab">
                   <a class="current nav-item" data-filter="*">All Types</a>
-                  <a class="nav-item" data-filter=".for-sell">For Sell</a>
-                  <a class="nav-item" data-filter=".for-rent">For Rent</a>
-                </div>
+                  <a class="nav-item" data-filter=".for-sell">Residential</a>
+                  <a class="nav-item" data-filter=".for-rent">Commercial</a>
+                   <a class="nav-item" data-filter=".for-rent">Villa</a>
+                </div> -->
+                  
+<div class="isotope-classes-tab">
+    <a class="current nav-item" href="index.html">All Types</a>
+    <a class="nav-item" href="residential.html">Residential</a>
+    <a class="nav-item" href="commercial.html">Commercial</a>
+    <a class="nav-item" href="villa.html">Villa</a>
+</div>
+
+
               </div>
             </div>
             <div class="row featuredContainer">
@@ -936,7 +1016,7 @@
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-insta">
                   <div class="footer-title footer-title-style2">
-                    <h3>Instagram</h3>
+                    <h3>About us</h3>
                   </div>
                   <div class="insta-link">
                     <ul>
@@ -1189,5 +1269,17 @@
 
     <!-- Main Js Start Here -->
     <script src="js/main.js"></script>
+
+<script>
+// JavaScript to handle link clicks
+document.querySelectorAll('.isotope-classes-tab .nav-item').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent the default anchor behavior
+        const pageUrl = this.getAttribute('href');  // Get the page URL from href
+        window.location.href = pageUrl;  // Redirect to the page
+    });
+});
+</script>
+
   </body>
 </html>
